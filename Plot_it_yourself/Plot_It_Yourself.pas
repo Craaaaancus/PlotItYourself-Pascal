@@ -12,7 +12,7 @@ var
  
 begin
   
-   assign(InputFile, 'C:\Pascal\Plot_it_yourself\input.txt');
+   assign(InputFile, 'input.txt');
    MyTypes.ReadInit(InputFile);  
    MyTypes.PrintInit;
    writeln;
@@ -52,7 +52,7 @@ begin
       end;          
    end;         
 
-   assign (OutputFile,'C:\Pascal\Plot_it_yourself\output.txt');
+   assign (OutputFile,'output.txt');
    MyTypes.OutputLog (OutputFile); 
    MyTypes.PrintResults;
    MyTypes.DestroyPlayers;

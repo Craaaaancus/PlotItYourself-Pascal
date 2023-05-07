@@ -261,7 +261,7 @@ procedure OutputLog(OutputFile: text);  //writes log History to outputFile. Hist
       for NoStep:=0 to MaxNumberOfSteps do begin
          for i:=1 to NUsers do begin
             if (NoStep <=Players[i].fStep) then begin
-               writeln (OutputFile, i:3,' ',Players[i].fHistory[NoStep].Step:5,' ',Players[i].fHistory[NoStep].TypeMove,' ',Players[i].fHistory[NoStep].MoveResult, ' ', Players[i].fHistory[NoStep].Position);
+               writeln (OutputFile,Players[i].fHistory[NoStep].Step,' ',Players[i].fHistory[NoStep].TypeMove,' ',Players[i].fHistory[NoStep].MoveResult, ' ', Players[i].fHistory[NoStep].Position);
                writeln (OutputFile,Players[i].fHistory[NoStep].Txt); 
             end;   
          end;       
